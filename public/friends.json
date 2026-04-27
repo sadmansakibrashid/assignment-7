@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "John Doe",
-    "picture": "https://example.com/photos/john.jpg",
+    "name": "Sarah Ahmed",
+    "picture":  "/pic1.png",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "name": "Sarah Ahmed",
-    "picture": "https://example.com/photos/sarah.jpg",
+    "name": "John Doe",
+    "picture": "/pic2.png",
     "email": "sarah.ahmed@example.com",
     "days_since_contact": 5,
     "status": "ok",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Chen",
-    "picture": "https://example.com/photos/michael.jpg",
+    "picture": "pic3.png",
     "email": "michael.chen@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Ayesha Khan",
-    "picture": "https://example.com/photos/ayesha.jpg",
+    "picture": "/pic4.png",
     "email": "ayesha.khan@example.com",
     "days_since_contact": 2,
     "status": "ok",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Smith",
-    "picture": "https://example.com/photos/david.jpg",
+    "picture": "pic5.png",
     "email": "david.smith@example.com",
     "days_since_contact": 30,
     "status": "overdue",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Fatima Noor",
-    "picture": "https://example.com/photos/fatima.jpg",
+    "picture": "pic6.png",
     "email": "fatima.noor@example.com",
     "days_since_contact": 8,
     "status": "ok",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Carlos Mendes",
-    "picture": "https://example.com/photos/carlos.jpg",
+    "picture": "pic7.png",
     "email": "carlos.mendes@example.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Emily Johnson",
-    "picture": "https://example.com/photos/emily.jpg",
+    "picture": "pic8.png",
     "email": "emily.johnson@example.com",
     "days_since_contact": 1,
     "status": "ok",
@@ -94,5 +94,53 @@
     "bio": "Friendly neighbor. Often go for evening walks.",
     "goal": 7,
     "next_due_date": "2025-08-02"
+  },
+  {
+    "id": 9,
+    "name": "Rashid Karim",
+    "picture": "pic9.png",
+    "email": "rashid.karim@example.com",
+    "days_since_contact": 11,
+    "status": "ok",
+    "tags": ["startup", "mentor"],
+    "bio": "Mentor from a startup program. Gives great career advice.",
+    "goal": 14,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 10,
+    "name": "Lina Gomez",
+    "picture": "pic10.png",
+    "email": "lina.gomez@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["design", "freelance"],
+    "bio": "Freelance designer I collaborated with on a project.",
+    "goal": 10,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 11,
+    "name": "Tanvir Hasan",
+    "picture": "pic11.png",
+    "email": "tanvir.hasan@example.com",
+    "days_since_contact": 9,
+    "status": "ok",
+    "tags": ["university", "project partner"],
+    "bio": "Worked together on several university projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-26"
+  },
+  {
+    "id": 12,
+    "name": "Nusrat Jahan",
+    "picture": "pic9.png",
+    "email": "nusrat.jahan@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "School friend. We used to study together.",
+    "goal": 10,
+    "next_due_date": "2025-07-17"
   }
 ]
