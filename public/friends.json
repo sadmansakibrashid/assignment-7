@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://example.com/photos/john.jpg",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://example.com/photos/sarah.jpg",
+    "email": "sarah.ahmed@example.com",
+    "days_since_contact": 5,
+    "status": "ok",
+    "tags": ["work", "team"],
+    "bio": "Colleague from marketing team. Great at brainstorming.",
+    "goal": 10,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "picture": "https://example.com/photos/michael.jpg",
+    "email": "michael.chen@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "fitness"],
+    "bio": "Workout partner. Keeps me motivated.",
+    "goal": 7,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha Khan",
+    "picture": "https://example.com/photos/ayesha.jpg",
+    "email": "ayesha.khan@example.com",
+    "days_since_contact": 2,
+    "status": "ok",
+    "tags": ["family", "cousin"],
+    "bio": "Cousin who lives nearby. We meet often.",
+    "goal": 5,
+    "next_due_date": "2025-08-01"
+  },
+  {
+    "id": 5,
+    "name": "David Smith",
+    "picture": "https://example.com/photos/david.jpg",
+    "email": "david.smith@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["travel", "old friend"],
+    "bio": "Met during a trip abroad. Keeps sharing travel tips.",
+    "goal": 21,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 6,
+    "name": "Fatima Noor",
+    "picture": "https://example.com/photos/fatima.jpg",
+    "email": "fatima.noor@example.com",
+    "days_since_contact": 8,
+    "status": "ok",
+    "tags": ["book club"],
+    "bio": "We read and discuss books every month.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 7,
+    "name": "Carlos Mendes",
+    "picture": "https://example.com/photos/carlos.jpg",
+    "email": "carlos.mendes@example.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. Regular co-op sessions.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 8,
+    "name": "Emily Johnson",
+    "picture": "https://example.com/photos/emily.jpg",
+    "email": "emily.johnson@example.com",
+    "days_since_contact": 1,
+    "status": "ok",
+    "tags": ["neighbor"],
+    "bio": "Friendly neighbor. Often go for evening walks.",
+    "goal": 7,
+    "next_due_date": "2025-08-02"
+  }
+]
