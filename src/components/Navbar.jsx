@@ -21,7 +21,7 @@ const Navbar = () => {
       <li><NavLink to={'/stats'} className={({isActive})=>`${isActive?"bg-green-700 text-white":""}`}><ImStatsDots/>Stats</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className=" text-xl"><span className="font-bold">Keen</span><span>Keeper</span></div>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
