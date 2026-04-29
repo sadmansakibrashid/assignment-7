@@ -5,7 +5,7 @@ const TimelineContextProvider=({children})=>{
     const [timelineData,setTimelineData] = useState([])
 
     return(
-        <TimeLineContext.Provider value={timelineData,setTimelineData}>
+        <TimeLineContext.Provider value={{timelineData,setTimelineData}}>
             {children}
         </TimeLineContext.Provider>
     )

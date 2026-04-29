@@ -1,19 +1,30 @@
-import { use } from "react";
+import { use, useContext } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { LuVideo } from "react-icons/lu";
 import { MdOutlineTextsms } from "react-icons/md";
 import { useParams } from "react-router";
+import { TimeLineContext } from "../context/Context";
+import { toast } from "react-toastify";
 
 const friendsPromise = fetch("/friends.json").
 then((res)=>res.json());
 const Detail = () => {
     const {id}= useParams();
-    console.log(id);
+    
     const friends = use(friendsPromise);
 
     const friend = friends.find(friend=>friend.id==id);
-    console.log(friend,"expected")
+   const { timelineData, setTimelineData } = useContext(TimeLineContext);
     
+    const handleAddData = (type,userDetails)=>{
+      const newData = {
+        ...userDetails,
+        action: type,
+        time: new Date().toISOString(),
+      };
+      setTimelineData([...timelineData,newData]);
+      toast.success("done");
+    }
 
 
   return (
@@ -102,9 +113,12 @@ const Detail = () => {
           <h3 className="font-semibold mb-4">Quick Check-In</h3>
 
           <div className="grid grid-cols-3 gap-4">
-            <button className="btn"><FiPhoneCall /> Call</button>
-            <button className="btn"><MdOutlineTextsms /> Text</button>
-            <button className="btn"><LuVideo /> Video</button>
+            <button onClick={()=>handleAddData("call",friend)}
+            className="btn"><FiPhoneCall /> Call</button>
+            <button onClick={()=>handleAddData("Text",friend)}
+            className="btn"><MdOutlineTextsms /> Text</button>
+            <button onClick={()=>handleAddData("video-call",friend)}
+            className="btn"><LuVideo /> Video</button>
           </div>
 
          
