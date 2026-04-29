@@ -7,6 +7,9 @@ import Timeline from './components/Timeline';
 import Stats from './components/Stats';
 import NotFound from './components/NotFoundPage';
 import Homepage from './components/Homepage';
+import Detail from './components/Detail';
+import { ToastContainer } from 'react-toastify';
+import TimelineContextProvider from './context/TimelineProvider';
 
 const router = createBrowserRouter([
  {path:'/',
@@ -25,6 +28,10 @@ const router = createBrowserRouter([
   path:'/stats',
   element:<Stats></Stats>
  },
+ {
+  path:'/:id',
+  element:<Detail></Detail>
+ },
 ],
 errorElement:<NotFound></NotFound>
 },
@@ -33,6 +40,10 @@ errorElement:<NotFound></NotFound>
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-      <RouterProvider router ={router} />
+     <TimelineContextProvider>
+     <RouterProvider router ={router} />
+      <ToastContainer position='top-center' />
+     </TimelineContextProvider>
+      
   </StrictMode>,
 )

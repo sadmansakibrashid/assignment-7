@@ -1,5 +1,6 @@
 import { use } from "react";
 import { FaPlus } from "react-icons/fa";
+import { Link } from "react-router";
 
 const friendsPromise = fetch("/friends.json").
 then((res)=>res.json());
@@ -48,7 +49,7 @@ const Homepage = () => {
                 friends.map((friend)=>
                 {
                     return (
-                    <div className="card bg-base-100 w-96 shadow-sm">
+                    <Link to={`/${friend.id}`} className="card bg-base-100 w-96 shadow-sm" key={friend.id}>
   <figure className="px-10 pt-10">
     <img
       src={friend.picture}
@@ -56,12 +57,24 @@ const Homepage = () => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{friend.name}</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
+    <p className="text-gray-500">{friend.days_since_contact} d ago</p>
+<div className="flex flex-wrap gap-2 justify-center mt-2">
+      {friend.tags.map((tag, index) => (
+            <span key={index} className="badge badge-success">
+              {tag}
+            </span>
+          ))}
 </div>
+ <p className={`badge 
+          ${friend.status === "overdue" ? "badge-error" : ""}
+          ${friend.status === "almost due" ? "badge-warning" : ""}
+          ${friend.status === "on-track" ? "badge-success" : ""}
+        `}>
+          {friend.status}
+        </p>
+  
+  </div>
+</Link>
                     );
                     
                 }
