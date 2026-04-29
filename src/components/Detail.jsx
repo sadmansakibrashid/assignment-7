@@ -28,15 +28,13 @@ const Detail = () => {
 
 
   return (
-    <div className="p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 container mx-auto">
 
       
-     <div className="card bg-base-100 shadow-md p-6 items-center text-center">
-  <figure className="px-10 pt-10">
-    <img
-      src={friend.picture}
-      className="rounded-xl" />
-  </figure>
+     <div className="card bg-base-100 shadow-md p-6 flex flex-col items-center text-center h-full">
+  <figure className="flex justify-center px-10 pt-10">
+      <img src={friend.picture} className="rounded-xl" />
+    </figure>
 
   <h2 className="text-xl font-bold mt-3">{friend.name}</h2>
 
@@ -75,7 +73,7 @@ const Detail = () => {
 </div>
 
      
-      <div className="lg:col-span-2 flex-col gap-6">
+      <div className="lg:col-span-2 flex flex-col gap-6 h-full">
 
        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
